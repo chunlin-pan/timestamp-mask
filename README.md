@@ -1,4 +1,4 @@
-[toc]
+![](input_gif.gif)
 
 
 # Windows 安裝方式

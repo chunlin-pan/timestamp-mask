@@ -8,9 +8,9 @@ def timestamp(filename, time, duration, output_name, start_time=0, color='white'
     second_range = range(duration)
     text_list=[]
     for i in second_range:
-        txt_clip = TextClip(set_time(time, i),fontsize=70,color=color).set_duration(1)
+        text_clip = TextClip(set_time(time, i),fontsize=70,color=color).set_duration(1)
         
-        text_list.append(txt_clip)
+        text_list.append(text_clip)
     if type(start_time) in [tuple, list]:
         start = (start_time[0],start_time[1]+i)
         end = (start_time[0],start_time[1]+i+1)
@@ -21,7 +21,7 @@ def timestamp(filename, time, duration, output_name, start_time=0, color='white'
         video = video.without_audio()
     final_text_clip = concatenate_videoclips(text_list).set_position((0.05,0.85), relative=True)
     final_clip = CompositeVideoClip([video, final_text_clip])
-    final_clip.write_videofile(output_name)
+    final_clip.write_videofile(output_name, fps = 60)
 
 def set_time(time, second):
     mod_second = (second) % 60 
