@@ -1,5 +1,5 @@
 # timestamp-mask
-timestamp-mask是一個幫影片增加時間戳記的工具。
+timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過加速，實際輸出還是原來影片的速度。
 
 ![Alt Text](demo/input_gif.gif)
 ![Alt Text](demo/timestamp_gif.gif)
