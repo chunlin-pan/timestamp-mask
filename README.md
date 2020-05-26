@@ -1,17 +1,4 @@
-![](input_gif.gif)
-
-
-
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
->>>>>>> e792c70038cb35b49b17205068ae68454204da76
+![Alt Text](input_gif.gif)
 # Windows 安裝方式
 1. 下載python3 (有python3 略過這一步)
 
