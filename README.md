@@ -1,3 +1,9 @@
+![](input_gif.gif)
+
+
+
+
+
 # Windows 安裝方式
 1. 下載python3 (有python3 略過這一步)
 
