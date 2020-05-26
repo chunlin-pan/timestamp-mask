@@ -1,6 +1,4 @@
 ![](input_gif.gif)
-
-
 # Windows 安裝方式
 1. 下載python3 (有python3 略過這一步)
 
@@ -9,7 +7,7 @@
     或是直接點這裡[下載](https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe)。
 
     Add Python 3.8 to Path 請打勾，其他配置請勿更動。
-    ![Alt text](https://imgur.com/wjOad4R)
+    ![Imgur Image](https://imgur.com/wjOad4R.jpg)
 
 2. 下載imagemagick (有imagemagick 略過這一步)
 
@@ -63,21 +61,25 @@
 
 4. 增加時間浮水印
 
-    輸入檔名: input.mp4
+    如果你要加浮水印的影片、影片當下時間等等的規格如下:
 
-    影片當下時間: 2020/05/26 06:23
+        輸入檔名: input.mp4
 
-    影片擷取起點: 第3秒
+        影片當下時間: 2020/05/26 06:23
 
-    影片持續時間: 10秒
+        影片擷取起點: 第3秒
 
-    關閉聲音: 是
+        影片持續時間: 10秒
 
-    輸出檔案: output.mp4
+        關閉聲音: 是
+
+        輸出檔案: output.mp4
+
+    就輸入:
 
     `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23 -s 3 -d 10 -audio-off -o output.mp4`
 
-    如果要保留聲音則把`-audio-off`去掉
+    如果要保留聲音則把`-audio-off`去掉，則輸入:
 
     `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23 -s 3 -d 10 -o output.mp4`
 
