@@ -24,6 +24,7 @@ def timestamp(filename, time, duration, output_name, start_time=0, color='white'
     final_clip.write_videofile(output_name, fps = 60)
 
 def set_time(time, second):
+    second = time[5] + second
     mod_second = (second) % 60 
     carry_second = second // 60
     
@@ -50,9 +51,9 @@ if __name__ == '__main__':
     args = parser.parse_args()
     
     filename = args.filename
-    time = list(map(int, args.time.split(',')))[:5] #[year, month, day, hour, minute]
+    time = list(map(int, args.time.split(',')))[:6] #[year, month, day, hour, minute, second]
     start_time = args.starttime
     duration = args.duration
-    audio = 'off' if arg.audio_off else 'on'
+    audio = 'off' if args.audio_off else 'on'
     output_name = args.outputname
     timestamp(filename=filename, time=time, duration=duration, output_name=output_name, start_time=start_time, audio = audio, color='white')
