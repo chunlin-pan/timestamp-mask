@@ -45,11 +45,21 @@
 
     回到CMD輸入
 
-    `$deactivate`
+    `$ deactivate`
 
     完成安裝
 
 # 使用方式
 
+1. 開啟CMD
 
+2. 移到`timestamp-mask`目錄
+
+    `$ cd C:\Users\user\Downloads\timestamp-mask`
+
+3. 進入虛擬環境
+
+    `$ timestamp-env\Scripts\activate.bat`
+
+    `$ python timestamp.py -f`
 
