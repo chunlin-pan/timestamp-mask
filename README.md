@@ -9,7 +9,7 @@
     或是直接點這裡[下載](https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe)。
 
     Add Python 3.8 to Path 請打勾，其他配置請勿更動。
-    ![Alt text](https://imgur.com/wjOad4R)
+    ![Imgur Image](https://imgur.com/wjOad4R.jpg)
 
 2. 下載imagemagick (有imagemagick 略過這一步)
 
