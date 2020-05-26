@@ -1,3 +1,6 @@
+# timestamp-mask
+timestamp-mask是一個幫影片增加時間戳記的工具。
+
 ![Alt Text](demo/input_gif.gif)
 ![Alt Text](demo/timestamp_gif.gif)
 ![Alt Text](demo/output_gif.gif)
