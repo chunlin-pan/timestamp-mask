@@ -9,7 +9,7 @@
     或是直接點這裡[下載](https://www.python.org/ftp/python/3.8.3/python-3.8.3.exe)。
 
     Add Python 3.8 to Path 請打勾，其他配置請勿更動。
-    ![](https://imgur.com/wjOad4R)
+    ![Alt text](https://imgur.com/wjOad4R)
 
 2. 下載imagemagick (有imagemagick 略過這一步)
 
@@ -21,7 +21,7 @@
 
 3. 下載本[專案](https://github.com/chunlin-pan/timestamp-mask/archive/master.zip)並解壓縮
 
-    開啟CMD
+    開啟CMD(`$` 開頭表示要在CMD中輸入的指令，從`$`後面的內容開始輸入)
 
     `$ cd C:\Users\user\Downloads\timestamp-mask` 後面的參數是解壓縮後的資料夾位置
 
@@ -31,7 +31,7 @@
 
     `$ pip install -r requirements.txt` 安裝必要套件
 
-    安裝完後以WordPad開啟
+    安裝完後以WordPad開啟以下檔案
     
     `timestamp-mask\timestamp-env\Lib\site-packages\moviepy\config_defaults.py` 
     
@@ -61,5 +61,27 @@
 
     `$ timestamp-env\Scripts\activate.bat`
 
-    `$ python timestamp.py -f`
+4. 增加時間浮水印
+
+    輸入檔名: input.mp4
+
+    影片當下時間: 2020/05/26 06:23
+
+    影片擷取起點: 第3秒
+
+    影片持續時間: 10秒
+
+    關閉聲音: 是
+
+    輸出檔案: output.mp4
+
+    `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23 -s 3 -d 10 -audio-off -o output.mp4`
+
+    如果要保留聲音則把`-audio-off`去掉
+
+    `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23 -s 3 -d 10 -o output.mp4`
+
+5. 離開虛擬環境
+
+    `$ deactivate`
 

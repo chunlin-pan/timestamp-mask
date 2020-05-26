@@ -2,7 +2,7 @@ from moviepy.editor import *
 from datetime import datetime as dt
 import argparse
 
-def timestamp(filename, time, duration, output_name, start_time=0, color='white'):
+def timestamp(filename, time, duration, output_name, start_time=0, color='white', audio='on'):
     ''''2020/05/20 06:43:' time格式'''
     time = time
     second_range = range(duration)
@@ -17,7 +17,8 @@ def timestamp(filename, time, duration, output_name, start_time=0, color='white'
         video = VideoFileClip(filename).subclip(start,end)
     else:
         video = VideoFileClip(filename).subclip(start_time, start_time + duration)
-    video = video.without_audio()
+    if audio == 'off':
+        video = video.without_audio()
     final_text_clip = concatenate_videoclips(text_list).set_position((0.05,0.85), relative=True)
     final_clip = CompositeVideoClip([video, final_text_clip])
     final_clip.write_videofile(output_name)
@@ -44,6 +45,7 @@ if __name__ == '__main__':
     parser.add_argument('-t', '--time', help='year, month, day, minute', type = str) #year, month, day, hour, minute
     parser.add_argument('-s', '--starttime', help='input an integer', type = int)
     parser.add_argument('-d', '--duration', help='input an integer', type = int)
+    parser.add_argument('-aud-off', '--audio-off', help='turn off audio', action='store_true')
     parser.add_argument('-o', '--outputname', help='input xxx.mp4', type = str)
     args = parser.parse_args()
     
@@ -51,5 +53,6 @@ if __name__ == '__main__':
     time = list(map(int, args.time.split(',')))[:5] #[year, month, day, hour, minute]
     start_time = args.starttime
     duration = args.duration
+    audio = 'off' if arg.audio_off else 'on'
     output_name = args.outputname
-    timestamp(filename=filename, time=time, duration=duration, output_name=output_name, start_time=start_time, color='white')
+    timestamp(filename=filename, time=time, duration=duration, output_name=output_name, start_time=start_time, audio = audio, color='white')
