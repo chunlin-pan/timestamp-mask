@@ -1,3 +1,6 @@
+[![Python](https://img.shields.io/badge/python-3.8.3-blue.svg?style=popout)](https://www.python.org/downloads/release/python-383/)
+[![imagemagick](https://img.shields.io/badge/imagemagick-7.0.10--14-green])](https://github.com/ImageMagick/ImageMagick/tree/7.0.10-14)
+[![moviepy](https://img.shields.io/badge/moviepy-1.0.3-yellow)](https://github.com/Zulko/moviepy/tree/v1.0.3)
 # timestamp-mask
 timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過加速，實際輸出還是原來影片的速度。
 
