@@ -5,9 +5,9 @@
 
 timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過加速，實際輸出還是原來影片的速度。
 
-![Alt Text](demo/input_gif.gif)
-![Alt Text](demo/timestamp_gif.gif)
-![Alt Text](demo/output_gif.gif)
+![Alt Text](https://media.giphy.com/media/VJNHaoA0Uze4f1BgLJ/giphy.gif)
+![Alt Text](https://media.giphy.com/media/jQtC6FBVTWLyWKB0J0/giphy.gif)
+![Alt Text](https://media.giphy.com/media/QZ84AHF9tAFsrT0Uc0/giphy.gif)
 # Windows 安裝方式
 1. 下載python3 (有python3 略過這一步)
 
