@@ -32,7 +32,7 @@ timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過�
 
     `$ cd C:\Users\user\Downloads\timestamp-mask` 後面的參數是解壓縮後的資料夾位置
 
-    `$ python -m vnev timestamp-env` 開啟虛擬環境
+    `$ python -m venv timestamp-env` 開啟虛擬環境
 
     `$ timestamp-env\Scripts\activate.bat` 進入虛擬環境
 
