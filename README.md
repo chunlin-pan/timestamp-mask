@@ -86,9 +86,9 @@ timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過�
 
     就輸入:
 
-    `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23,0 -s 3 -d 10 -audio-off -o output.mp4`
+    `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23,0 -s 3 -d 10 -aud-off -o output.mp4`
 
-    如果要保留聲音則把`-audio-off`去掉，則輸入:
+    如果要保留聲音則把`-aud-off`去掉，則輸入:
 
     `$ python timestamp.py -f input.mp4 -t 2020,5,26,6,23,0 -s 3 -d 10 -o output.mp4`
 
