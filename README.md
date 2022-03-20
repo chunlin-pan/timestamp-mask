@@ -21,46 +21,38 @@ timestamp-mask是一個幫影片增加時間戳記的工具，以下demo經過�
 2. 下載imagemagick (有imagemagick 略過這一步)
 
     https://imagemagick.org/script/download.php
-
-    或是直接點這裡[下載](https://imagemagick.org/download/binaries/ImageMagick-7.0.10-14-Q16-x64-dll.exe)。
-
     安裝配置請勿更動。
 
 3. 下載本[專案](https://github.com/chunlin-pan/timestamp-mask/archive/master.zip)並解壓縮
 
     開啟CMD(`$` 開頭表示要在CMD中輸入的指令，從`$`後面的內容開始輸入)
 
-    `$ cd C:\Users\user\Downloads\timestamp-mask` 後面的參數是解壓縮後的資料夾位置
+    後面的參數是解壓縮後的資料夾位置
 
-    `$ python -m venv timestamp-env` 開啟虛擬環境
+    `$ cd C:\Users\user\Downloads\timestamp-mask`
 
-    `$ timestamp-env\Scripts\activate.bat` 進入虛擬環境
+    開啟虛擬環境
 
-    `$ pip install -r requirements.txt` 安裝必要套件
+    `$ python -m venv timestamp-env`
 
-    安裝完後以WordPad開啟以下檔案
-    
-    `timestamp-mask\timestamp-env\Lib\site-packages\moviepy\config_defaults.py` 
-    
-    將檔案最下面一行
+    進入虛擬環境  
+    `$ timestamp-env\Scripts\activate.bat`
 
-    IMAGEMAGICK_BINARY = os.getenv('IMAGEMAGICK_BINARY', 'auto-detect')
+    安裝必要套件
 
-    改成
-
-    IMAGEMAGICK_BINARY = r"C:\Program Files\ImageMagick-7.0.10-Q16\magick.exe"
-
-    回到CMD輸入
-
-    `$ deactivate`
+    `$ pip install -r requirements.txt` 
 
     完成安裝
+    
+    `$ deactivate`
+
+    
 
 # 使用方式
 
 1. 將需要上浮水印的影片放到 input 資料夾
 2. 開啟CMD
-3. 移到`timestamp-mask`目錄
+3. 移到 `timestamp-mask` 目錄
 
     `$ cd C:\Users\user\Downloads\timestamp-mask`
     
