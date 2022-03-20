@@ -1,2 +1,2 @@
 tqdm==4.17.0
-moviepy==1.0.3
+moviepy==v2.0.0.dev2
